@@ -20,20 +20,20 @@ clean:
 	$(RM) $(ALL_GENERATED_SUPP_FILES)
 
 glib.supp: $(glib_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 gio.supp: $(gio_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 pango.supp: $(pango_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 gail.supp: $(gail_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 gdk.supp: $(gdk_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 gtk.supp: $(gtk_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 gtk3.supp: $(gtk3_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 gtksourceview.supp: $(gtksourceview_supp_FILES)
-	cat -- $^ | sed '/^#/d' | cat COPYING - >$@
+	cat -- $^ | sed '/^#/d' >$@
 base.supp: Makefile $(base_supp_FILES)
-	cat -- $(filter %.supp,$^) | sed '/^#/d' | cat COPYING - >$@
+	cat -- $(filter %.supp,$^) | sed '/^#/d' >$@
