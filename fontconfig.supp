@@ -5,3 +5,23 @@
    Memcheck:Addr4
    fun:FcConfigFileExists
 }
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:realloc
+   ...
+   ...
+   ...
+   fun:FcDefaultSubstitute
+}
+
+{
+   <insert_a_suppression_name_here>
+   Memcheck:Leak
+   fun:realloc
+   ...
+   ...
+   fun:FcFontRenderPrepare
+}
+
