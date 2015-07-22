@@ -1,0 +1,7 @@
+{
+   quark allocation
+   Memcheck:Leak
+   fun:malloc
+   fun:g_malloc
+   fun:quark_new
+}
