@@ -1,0 +1,77 @@
+# -*- tab-width: 3; indent-tabs-mode: nil -*-
+
+{
+   g_type_class_ref
+   Memcheck:Leak
+   fun:calloc
+   fun:g_malloc0
+   fun:type_class_init_Wm
+}
+
+{
+   g_type_class_ref
+   Memcheck:Leak
+   fun:malloc
+   fun:g_malloc
+   fun:g_memdup
+   fun:type_iface_vtable_base_init_Wm
+}
+
+{
+   g_type_register_static
+   Memcheck:Leak
+   fun:realloc
+   fun:g_realloc
+   fun:type_node_any_new_W
+}
+
+{
+   g_type_register_static
+   Memcheck:Leak
+   fun:malloc
+   fun:realloc
+   fun:g_realloc
+   fun:type_node_any_new_W
+}
+
+{
+   g_type_register_fundamental
+   Memcheck:Leak
+   fun:calloc
+   fun:g_malloc0
+   fun:type_data_make_W
+}
+
+{
+   g_type_register_fundamental
+   Memcheck:Leak
+   fun:calloc
+   fun:g_malloc0
+   fun:type_node_any_new_W
+}
+
+{
+   g_type_register_fundamental
+   Memcheck:Leak
+   fun:calloc
+   fun:g_malloc0
+   fun:type_set_qdata_W
+}
+
+{
+   g_type_register_fundamental
+   Memcheck:Leak
+   fun:malloc
+   fun:realloc
+   fun:g_realloc
+   fun:type_set_qdata_W
+}
+
+{
+  atomic array copy
+  Memcheck:Leak
+  fun:malloc
+  ...
+  ...
+  fun:_g_atomic_array_copy
+}
