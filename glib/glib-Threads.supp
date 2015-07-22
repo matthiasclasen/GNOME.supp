@@ -1,0 +1,8 @@
+{
+   g_system_thread_new
+   Memcheck:Leak
+   fun:calloc
+   ...
+   ...
+   fun:g_system_thread_new
+}
