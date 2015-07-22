@@ -1,0 +1,7 @@
+{
+   pango_language_from_string
+   Memcheck:Leak
+   fun:calloc
+   fun:g_malloc0
+   fun:pango_language_from_string
+}
